@@ -21,6 +21,19 @@
                         </div>
                     <?php endif ?>
 
+                    <div class="alert alert-info mb-4">
+                        <h5 class="alert-heading mb-2">New Student Registration - Master (S2) and Doctoral (S3) Programs</h5>
+                        <ul class="mb-3">
+                            <li>Please review the form fields and prepare the required data before filling them out.</li>
+                            <li>Prepare a note to record the Virtual Account (VA) number used for payment via BNI Bank.</li>
+                        </ul>
+                        <strong>Payment Instructions:</strong>
+                        <ul class="mb-0 mt-2">
+                            <li>Pay via ATM / Internet Banking / Mobile Banking, etc. Use format: <strong>882901 + VA number</strong>.</li>
+                            <li>Refer to the BNI Virtual Account Payment Guide.</li>
+                        </ul>
+                    </div>
+
                     <?= form_open_multipart('/registration/submit', ['id' => 'registrationForm']) ?>
                     
                     
@@ -190,8 +203,35 @@
                         <div class="alert alert-info">
                             <strong>📋 Requirements:</strong>
                             <ul class="mb-0 mt-2 small">
-                                <li><strong>Master (S2):</strong> Scanned diploma, transcript, photo, ID, family card, academic achievement (optional), recommendation form (signed by Doctor), program accreditation (min. B)</li>
-                                <li><strong>Doctoral (S3):</strong> All S2 requirements + research proposal + 2 recommendation forms (signed by Professor)</li>
+                                <li>
+                                    <strong>Master's (S2):</strong>
+                                    <ul>
+                                        <li>Scanned copy of latest diploma / degree certificate</li>
+                                        <li>Scanned copy of academic transcript</li>
+                                        <li>Scanned passport photo</li>
+                                        <li>Scanned ID card / passport</li>
+                                        <li>Scanned family card</li>
+                                        <li>Scanned academic achievement certificate (if any, only the best one)</li>
+                                        <li>Scanned study program accreditation certificate (minimum grade B)</li>
+                                        <li>Scanned master's recommendation form</li>
+                                        <li>The recommendation form for Master's Degree (S2) applicants must be signed by at least a person holding a Doctoral degree, <a href="https://aplikasi.radenintan.ac.id/nyetrum/file_pasca/FORM_REKOMENDASI_S2.rtf">Sample Form</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Doctoral (S3):</strong>
+                                    <ul>
+                                        <li>Scanned copy of latest diploma / degree certificate</li>
+                                        <li>Scanned copy of academic transcript</li>
+                                        <li>Research proposal document</li>
+                                        <li>Scanned passport photo</li>
+                                        <li>Scanned ID card / passport</li>
+                                        <li>Scanned family card</li>
+                                        <li>Scanned academic achievement certificate (if any, only the best one)</li>
+                                        <li>Scanned study program accreditation certificate (minimum grade B)</li>
+                                        <li>Scanned recommendation forms 1 & 2 for doctoral program</li>
+                                        <li>The recommendation forms for Doctoral Degree (S3) applicants must be signed by at least two people holding a Doctoral degree, <a href="https://aplikasi.radenintan.ac.id/nyetrum/file_pasca/FORM_REKOMENDASI_S3.rtf">Sample Form</a></li>
+                                    </ul>
+                                </li>
                                 <li>All files must be compressed into <strong>one ZIP/RAR file</strong></li>
                                 <li>File extension: <code>.jpg</code> or <code>.jpeg</code> for images</li>
                                 <li>Maximum file size: <strong>19 MB</strong></li>
