@@ -71,7 +71,7 @@
                                 <label class="form-label">Emergency Contact Phone *</label>
                                 <input type="tel" name="emergency_contact_phone" class="form-control" 
                                        placeholder="+62..." value="<?= old('emergency_contact_phone') ?>" required>
-                                <small class="text-muted">For contact when you're unavailable</small>
+                                <small class="text-muted">The emergency phone number is used if you cannot be reached (only in urgent situations).</small>
                             </div>
                             
                             <div class="col-md-4">
@@ -252,7 +252,7 @@
                                 <label class="form-label">Occupation</label>
                                 <select name="occupation" class="form-select">
                                     <option value="">Select...</option>
-                                    <?php foreach(['Unemployed','Civil Servant','Military/Police','Entrepreneur','Private Employee','Honorary Worker'] as $occ): ?>
+                                    <?php foreach(['Unemployed','Civil Servant','Military/Police','State-Owned Enterprise','Private Employee','Contract Employee','Entrepreneur'] as $occ): ?>
                                         <option value="<?= $occ ?>" <?= old('occupation')==$occ?'selected':'' ?>><?= $occ ?></option>
                                     <?php endforeach ?>
                                 </select>
@@ -261,7 +261,7 @@
                                 <label class="form-label">Marital Status</label>
                                 <select name="marital_status" class="form-select">
                                     <option value="">Select...</option>
-                                    <?php foreach(['single'=>'Single','married'=>'Married','widowed'=>'Widowed','divorced'=>'Divorced'] as $val=>$label): ?>
+                                    <?php foreach(['single'=>'Single','married'=>'Married','widow'=>'Widow','widower'=>'Widower'] as $val=>$label): ?>
                                         <option value="<?= $val ?>" <?= old('marital_status')==$val?'selected':'' ?>><?= $label ?></option>
                                     <?php endforeach ?>
                                 </select>
